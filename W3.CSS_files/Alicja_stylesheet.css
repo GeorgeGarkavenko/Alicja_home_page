@@ -1,0 +1,23 @@
+img {
+    width:100%;
+    cursor: pointer;
+}
+
+img:hover {
+    opacity: 0.7;   
+}
+
+img.icon {
+    width:60px;
+    
+}
+
+img.type_icon {
+    width:90%;
+    min-height:150px;
+    
+}
+
+#content {
+    margin: auto;
+}
