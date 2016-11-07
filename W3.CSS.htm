@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Alicja clothes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="W3.CSS_files/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        
+    </style>
+    <script>
+        function add_item(){
+            
+            var list = document.getElementById("comments_list"),
+            email = document.getElementById("email").value,
+            comment = document.getElementById("comment").value,
+            gender = document.getElementById("radio_mail").checked ?
+                "img_male.png"
+                :
+                "img_female.png"
+            ;
+            
+            
+            list.innerHTML += `
+            
+            <li class="w3-padding-16">
+              <span onclick="this.parentElement.style.display='none'"
+             class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+              <img src="W3.CSS_files/${gender}" class="w3-left w3-circle w3-margin-right" style="width:60px">
+              <span class="w3-xlarge">${email}</span><br>
+              <span>${comment}</span>
+            </li>
+            `;
+            
+        }
+    </script>
+</head>
+
+<body>
+
+    <ul class="w3-navbar w3-light-grey w3-top w3-large w3-border">
+        <li><a class="w3-green" href="#Home">Home <i class="fa fa-home"></i></a></li>
+        <li><a href="#Types">Types</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+        
+      
+        <li class="w3-right"><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+    <a name="Home"></a>
+
+
+<div class="w3-content w3-padding-32 w3-margin w3-column"> 
+
+    <!-- Types of clothes  -->
+    <div class="w3-panel w3-theme w3-margin-top w3-round-large">
+        <h2>Types of clothes</h2>
+        <a name="Types"></a>
+    </div>
+
+    <div class="w3-row w3-margin">
+        
+        <div class="w3-container w3-quarter w3-padding w3-justify">
+          <img src="W3.CSS_files/Alicja_tunic.JPG" style="width:90%;min-height:150px">
+        </div>
+        <div class="w3-container w3-justify">
+          <h4>Tunic</h4>
+          <p>
+          A tunic is any of several types of garment for the body, usually simple in style, 
+          reaching from the shoulders to a length somewhere between the hips and the ankles. 
+          The name derives from the Latin tunica, the basic garment worn by both men and women 
+          in Ancient Rome, which in turn was based on earlier Greek garments that covered people 
+          around their waist.
+          </p>
+        </div>
+
+        <div class="w3-quarter w3-padding">
+          <img src="W3.CSS_files/Alicja_pants.JPG" style="width:90%;min-height:150px">
+        </div>
+        <div class="w3-container">
+          <h4>Trousers</h4>
+          <p>
+          Trousers (pants in North America) are an item of clothing worn from the waist to the ankles, 
+          covering both legs separately (rather than with cloth extending across both legs as in robes, 
+          skirts, and dresses).
+          </p>
+        </div>
+        
+        <div class="w3-quarter w3-padding">
+          <img src="W3.CSS_files/Alicja_dress.JPG" style="width:90%;min-height:150px">
+        </div>
+        <div class="w3-container">
+          <h4>Dress</h4>
+          <p>
+          A dress (also known as a frock or a gown) is a garment consisting of a skirt with an attached 
+          bodice (or a matching bodice giving the effect of a one-piece garment). In Western culture, 
+          dresses are more often worn by women and girls.
+          </p>
+        </div>
+        
+    </div>
+
+    
+    <!-- Gallery 2-->
+    
+    <div class="w3-panel w3-theme w3-round-large">
+    <h2>Gallery</h2>
+    <a name="Gallery"></a>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+
+        <div class="w3-third w3-padding">
+            <div class="w3-card-2">
+                <img src="W3.CSS_files/Alicja_coat.JPG" style="width:100%">
+                <div class="w3-container">
+                    <h4>Coat</h4>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third w3-padding">
+            <div class="w3-card-2">
+                <img src="W3.CSS_files/Alicja_dress.JPG" style="width:100%">
+                <div class="w3-container">
+                    <h4>Dress</h4>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third w3-padding">
+            <div class="w3-card-2">
+                <img src="W3.CSS_files/Alicja_tunic.JPG" style="width:100%">
+                <div class="w3-container">
+                    <h4>Tunic</h4>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third w3-padding">
+            <div class="w3-card-2">
+                <img src="W3.CSS_files/Alicja_pants.JPG" style="width:100%">
+                <div class="w3-container">
+                    <h4>Pants</h4>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third w3-padding">
+            <div class="w3-card-2">
+                <img src="W3.CSS_files/Alicja_overalls.JPG" style="width:100%">
+                <div class="w3-container">
+                    <h4>Overalls</h4>
+                </div>
+            </div>
+        </div>        
+    
+    </div>     
+    <!-- Forms  -->
+    <div class="w3-panel w3-theme w3-round-large">
+        <h2>Contact us</h2>
+        <a name="Contacts"></a>
+    </div> 
+    <div class="">
+    
+        <div class="w3-container w3-margin-top">
+        
+            <form class="w3-container w3-card-4" onsubmit="add_item(); return false;" >
+        
+                <p>
+                <input id="email" class="w3-input" type="email" style="width:90%" required>
+                <label class="w3-label w3-validate">E-mail</label>
+                </p>
+                <p>
+                <textarea id="comment" class="w3-input " style="resize:none" required></textarea>
+                <label class="w3-label w3-validate">Subject</label>
+                </p>
+                
+                
+                <p>
+                <input id="radio_mail" class="w3-radio" name="gender" type="radio" checked>
+                <label class="w3-validate">Male</label></p>
+                
+                <p>
+                <input id="radio_female" class="w3-radio" name="gender" type="radio">
+                <label class="w3-validate">Female</label></p>
+                
+                
+                <p>
+                <input id="milk" class="w3-check" type="checkbox">
+                <label class="w3-validate">Send feedback</label>
+                </p>
+                <p>
+                <button class="w3-btn w3-section w3-theme w3-ripple"> Submit </button>
+                </p>
+                
+            </form>
+    
+        </div>
+     
+        <div class="w3-container w3-row-padding w3-round-large">
+            <div class="w3-panel w3-theme w3-round-large">
+                <h3>Messages</h3>
+            </div> 
+            
+            <ul id="comments_list" class="w3-ul w3-card-4">
+            
+            <li class="w3-padding-16">
+              <span onclick="this.parentElement.style.display='none';"
+              class="w3-closebtn w3-padding w3-margin-right w3-medium">&times;</span>
+              <img src="W3.CSS_files/img_male.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+              <span class="w3-xlarge">Mike@gmail.com</span><br>
+              <span>Good clothes!</span>
+            </li>
+            
+          </ul>
+    
+        </div>
+    </div>
+    
+    
+    
+</div>
+
+</body></html>
