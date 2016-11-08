@@ -1,4 +1,17 @@
-function add_item(){
+function collapse_navbar() {
+            var x = document.getElementById("collapsed_menue");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+}
+
+function hide_menue() {
+            document.getElementById("collapsed_menue").style.display = "none";
+}
+
+function add_item() {
             
             var list = document.getElementById("comments_list"),
             email = document.getElementById("email").value,

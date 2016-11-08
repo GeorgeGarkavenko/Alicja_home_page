@@ -4,6 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Alicja clothes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="W3.CSS_files/w3.css">
+    
     <link rel="stylesheet" href="W3.CSS_files/w3-theme-light-green.css">
     <link rel="stylesheet" href="W3.CSS_files/Alicja_stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -13,14 +14,26 @@
 
 <body>
 
-    <ul class="w3-navbar w3-light-grey w3-top w3-large w3-border">
+   
+    <ul id="navbar" class="w3-navbar w3-light-grey w3-top w3-large w3-border">
+        <li class="w3-hide-medium w3-hide-large w3-theme w3-opennav w3-right">
+            <a href="javascript:void(0);" onclick="collapse_navbar()">☰</a>
+        </li>
         <li><a class="w3-green" href="#Home">Home <i class="fa fa-home"></i></a></li>
-        <li><a href="#Types">Types</a></li>
-        <li><a href="#Gallery">Gallery</a></li>
-        <li><a href="#message">Leave message</a></li>
+        <li><a class="w3-hide-small" href="#Types">Types</a></li>
+        <li><a class="w3-hide-small" href="#Gallery">Gallery</a></li>
+        <li><a class="w3-hide-small" href="#message">Leave message</a></li>
     </ul>
     <a name="Home"></a>
-
+    
+    <div id="collapsed_menue" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large w3-light-grey w3-top w3-margin-top">
+            <li><a href="#Types" onclick="collapse_navbar();">Types</a></li>
+            <li><a href="#Gallery" onclick="collapse_navbar();">Gallery</a></li>
+            <li><a href="#message" onclick="collapse_navbar();">Leave message</a></li>
+        </ul>
+    </div>
+    <!-- -->
 
 <div id="content" class="w3-content w3-padding-32 w3-margin-top w3-column"> 
 
